@@ -32,10 +32,10 @@ async def run_team(task):
             print('='*50)
             if isinstance(message, TextMessage):
                 print(msg:= f" {message.source}: {message.content}")
-                # yield msg
+                yield msg
             elif isinstance(message, TaskResult):
                 print(msg:=f'Task Result: {message.stop_reason}')
-                # yield msg
+                yield msg
             print('='*50)
 
 

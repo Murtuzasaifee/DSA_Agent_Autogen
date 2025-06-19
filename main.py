@@ -1,11 +1,16 @@
 import asyncio
 from src.dsa_agent.teams.team_executor import run_team
+from src.dsa_agent.streamlit.app import load_app
 
 
 async def main():
-    task = 'Write a Python Code to add 2 numbers'
-
-    await run_team(task)
+    ## Run team via CLI
+    # task = 'Write a Python Code to add 2 numbers'
+    # await run_team(task)
+    
+    ## Run team via Streamlit
+    await load_app()
+    
     
 
 
