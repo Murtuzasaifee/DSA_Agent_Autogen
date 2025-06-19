@@ -1,5 +1,5 @@
 from autogen_ext.code_executors.docker import DockerCommandLineCodeExecutor
-from configs.constants import DOCKER_WORK_DIR, DOCKER_TIMEOUT
+from src.dsa_agent.configs.constants import DOCKER_WORK_DIR, DOCKER_TIMEOUT
 
 def get_docker_executor():
     docker=DockerCommandLineCodeExecutor(

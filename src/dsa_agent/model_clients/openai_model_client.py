@@ -1,7 +1,7 @@
 from autogen_ext.models.openai import OpenAIChatCompletionClient
 import os
 from dotenv import load_dotenv
-from configs.constants import MODEL
+from src.dsa_agent.configs.constants import MODEL
 
 load_dotenv()
 
